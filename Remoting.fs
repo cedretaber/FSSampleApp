@@ -1,29 +1,23 @@
 ﻿namespace SampleApp
 
+open System
 open WebSharper
 
 module Server =
 
-    let mutable number : int = 1
-    let mutable users : User list = []
-
-    [<Rpc>]
-    let DoSomething input =
-        let R (s: string) = System.String(Array.rev(s.ToCharArray()))
-        async {
-            return R input
-        }
+  let mutable number = 1
+  let mutable post_list : Post list = []
     
-    [<Rpc>]
-    let GetUsers () =
-        async {
-            return users
-        }
+  [<Rpc>]
+  let get_posts () =
+    async {
+      return post_list
+    }
 
-    [<Rpc>]
-    let AddUser user =
-        users <- { user with id = number } :: users
-        number <- number + 1
-        async {
-            return users
-        }
+  [<Rpc>]
+  let add_post post =
+    post_list <- { post with id = number } :: post_list
+    number <- number + 1
+    async {
+      return number - 1
+    }

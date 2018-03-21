@@ -5,10 +5,9 @@
     <WebProjectOutputDir>$(MSBuildThisFileDirectory)/wwwroot</WebProjectOutputDir>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="User.fs" />
+    <Compile Include="Post.fs" />
     <Compile Include="Remoting.fs" />
     <Compile Include="Client.fs" />
-    <Compile Include="Users.fs" />
     <Compile Include="Site.fs" />
     <Compile Include="Startup.fs" />
     <Compile Include="Program.fs" />
