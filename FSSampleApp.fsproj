@@ -4,6 +4,9 @@
     <WebSharperProject>Website</WebSharperProject>
     <WebProjectOutputDir>$(MSBuildThisFileDirectory)/wwwroot</WebProjectOutputDir>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <GenerateTailCalls>true</GenerateTailCalls>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Post.fs" />
     <Compile Include="Remoting.fs" />
