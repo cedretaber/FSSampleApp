@@ -17,6 +17,13 @@
         /* Margin bottom by footer height */
         margin-bottom: 60px;
     }
+    .logo {
+        margin-right: 20px;
+    }
+    .form-box {
+        padding: 2em;
+        border: solid 1px #d0d0d0;
+    }
     .footer {
         position: absolute;
         bottom: 0;
@@ -33,7 +40,8 @@
     <!-- Static navbar -->
     <nav class="uk-panel uk-margin-bottom uk-padding-small uk-background-secondary uk-light">
         <div class="uk-container">
-            <a class="uk-logo" href="#">Your App</a>
+            <span class="logo uk-logo" href="#">Board</span>
+            <span class="uk-text-meta">A sample of WebSharper</span>
         </div>
     </nav>
     <div class="uk-container">
@@ -42,9 +50,8 @@
     </div>
     <footer class="footer uk-background-secondary uk-light">
         <div class="uk-container">
-            <p class="text-muted">
-                For an enhanced template that provides automatic GitHub deployment to Azure, fork from <a href="https://github.com/intellifactory/ClientServer.Azure">GitHub</a>, or
-                read more <a href="http://websharper.com/blog-entry/4368/deploying-websharper-apps-to-azure-via-github">here</a>.
+            <p class="text-muted uk-text-meta uk-text-center">
+                © 2018 cedretaber.
             </p>
         </div>
     </footer>

@@ -26,7 +26,7 @@ module Site =
 
   let HomePage ctx =
     Templating.main ctx EndPoint.Home "Home" [
-      h1 [] [text "Home"]
+      h1 [] [text "Board"]
       div [] [client <@ Client.main () @>]
     ]
 

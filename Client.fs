@@ -64,7 +64,7 @@ module Client =
         ]
       ] :> Doc
     div [] [
-      form [] [
+      form [attr.``class`` "form-box"] [
         div [attr.``class`` "uk-margin"] [
           Doc.Input [attr.``class`` "uk-input"; attr.placeholder "名前"] name_input
         ]
@@ -72,7 +72,7 @@ module Client =
           Doc.Input [attr.``class`` "uk-input uk-margin"; attr.placeholder "タイトル"] title_input
         ]
         div [attr.``class`` "uk-margin"] [
-          Doc.InputArea [attr.``class`` "uk-textarea uk-margin"] text_input
+          Doc.InputArea [attr.``class`` "uk-textarea uk-margin"; attr.rows "10"] text_input
         ]
         Doc.Button "投稿" [attr.``class`` "uk-button uk-button-primary uk-margin"] submit.Trigger
       ]
