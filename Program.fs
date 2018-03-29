@@ -19,5 +19,9 @@ module Program =
 
     [<EntryPoint>]
     let main args =
-        BuildWebHost(args).Run()
+        try
+          Database.init ()
+          BuildWebHost(args).Run ()
+        finally
+          Database.close ()
         0

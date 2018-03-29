@@ -9,6 +9,7 @@ open WebSharper.UI.Html
 
 [<JavaScript>]
 module Client =
+  open Post
 
   let main () =
     let name_input = Var.Create "" in
